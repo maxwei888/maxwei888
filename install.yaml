@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+  - name: print a message
+    debug: msg="this is my first task in first play,use for print some message"
+
+  - name: this module is use for install vsftpd and lrzsz
+    yum: name=vsftpd,lrzsz state=installed
+
+  - name: enable service
+    service: name=vsftpd state=started enabled=yes
