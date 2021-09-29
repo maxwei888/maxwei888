@@ -4,5 +4,5 @@
   - name: print a message
     debug: msg="this is my first task in first play,use for print some message"
 
-  - name: excute a OS command
+  - name: excute a system command
     shell: "ls /dev/sda1"
