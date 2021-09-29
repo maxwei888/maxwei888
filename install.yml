@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
   - name: print a message
-    debug: msg="this is my first task in first play,use for print some message"
+    debug: msg="this is my first task to print some message"
 
   - name: excute a system command
     shell: "ls /dev/sda1"
