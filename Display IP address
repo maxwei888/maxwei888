@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+  - name: print a message
+    debug: msg={{ansible_default_ipv4.address}}
