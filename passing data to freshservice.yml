@@ -1,4 +1,5 @@
-- uri:
+- name: passing curl data to sand-box 
+  uri:
     url: https://dfs-fs-sandbox.freshservice.com/api/v2/assets
     user: CNbsMFQn9LDynLiPd0oL
     password: Welcome@#$
