@@ -3,7 +3,7 @@
     user: CNbsMFQn9LDynLiPd0oL
     password: Welcome@#$
     method: POST  
-	  body: "cmdb_config_item":{ "name": "xsininfrpmgt10001","asset_type_id":13000759193, "impact":"low", "usage_type":"permanent", "description":"Test Create", "location_id":null, "agent_id":null, "department_id":null, "group_id":null, "type_fields": {"os_version_13000759193":"windows server 2016"}}
+    body: "cmdb_config_item":{ "name": "xsininfrpmgt10001","asset_type_id":13000759193, "impact":"low", "usage_type":"permanent", "description":"Test Create", "location_id":null, "agent_id":null, "department_id":null, "group_id":null, "type_fields": {"os_version_13000759193":"windows server 2016"}}
     status_code: 302
     headers:
       Content-Type: "server/json"
