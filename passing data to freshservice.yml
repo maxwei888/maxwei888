@@ -15,4 +15,5 @@
          Content-Type: 'application/json'
     register: result
   - name:
-    debug: var=result.stdout_lines
+    debug: 
+       var: result
