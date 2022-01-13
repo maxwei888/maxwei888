@@ -1,4 +1,3 @@
-[root@tower ansible]# vi pass.yml
 ---
 - hosts: localhost
   tasks:
