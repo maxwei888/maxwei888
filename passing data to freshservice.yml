@@ -1,17 +1,22 @@
+[root@tower ansible]# vi pass.yml
 ---
 - hosts: localhost
   tasks:
   - uri:
-      url: 'https://dfs-fs-sandbox.freshservice.com/api/v2/assets'
-      method: POST
-      body:
-         {"name":"xsininfrpmgt21000","asset_type_id":13000759193,"impact":"low","usage_type":"permanent","description":"Test Create","location_id":null,"agent_id":null,"department_id":null,"group_id":null,"type_fields":{"os_version_13000759193":"windows server 2016"}}
-      body_format: json
-      headers:
-         Content-Type: 'application/json'
-      url_username: CNbsMFQn9LDynLiPd0oL
-      url_password: Welcome@#$
+       url: 'https://dfs-fs-sandbox.freshservice.com/api/v2/assets'
+       method: POST
+       body: {"name":"xsininfrpmgt1000","asset_type_id":13000759193,"impact":"low","usage_type":"permanent","description":"TestCreate","location_id":null,"agent_id":null,"department_id":null,"group_id":null,"type_fields":{"os_version_13000759193":"windows server 2016"}}
+       body_format: json
+       headers:
+            Content-Type: 'application/json'
+       url_username: CNbsMFQn9LDynL
+       url_password: WelcomeXXX
     register: login
+    environment:
+       http_proxy: 'http://apac-nat-zscaler.proxy.lvmh:9480'
+       https_proxy: 'http://apac-nat-zscaler.proxy.lvmh:9480'
+       no_proxy: ''
+
     #register: result
   #- name:
    # debug: 
