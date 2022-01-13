@@ -6,6 +6,7 @@
        method: POST
        body: {"name":"xsininfrpmgt1000","asset_type_id":13000759193,"impact":"low","usage_type":"permanent","description":"TestCreate","location_id":null,"agent_id":null,"department_id":null,"group_id":null,"type_fields":{"os_version_13000759193":"windows server 2016"}}
        body_format: json
+       force_basic_auth: yes
        headers:
             Content-Type: 'application/json'
        url_username: CNbsMFQn9LDynLiPd0oL
@@ -15,6 +16,7 @@
        http_proxy: 'http://apac-nat-zscaler.proxy.lvmh:9480'
        https_proxy: 'http://apac-nat-zscaler.proxy.lvmh:9480'
        no_proxy: ''
+
 
     #register: result
   #- name:
