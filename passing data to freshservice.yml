@@ -4,7 +4,7 @@
   - uri:
        url: 'https://dfs-fs-sandbox.freshservice.com/api/v2/assets'
        method: POST
-       body: {"name":"xsininfrpmgt100012345","asset_type_id":13000759193,"impact":"low","usage_type":"permanent","description":"TestCreate","location_id":null,"agent_id":null,"department_id":null,"group_id":null,"type_fields":{"os_version_13000759193":"windows server 2016"}}
+       body: {"name":"xsininfrpmgt000111","asset_type_id":13000759193,"impact":"low","usage_type":"permanent","description":"TestCreate","location_id":null,"agent_id":null,"department_id":null,"group_id":null,"type_fields":{"os_version_13000759193":"windows server 2019"}}
        body_format: json
        force_basic_auth: yes
        headers:
