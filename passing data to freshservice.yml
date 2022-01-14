@@ -11,6 +11,7 @@
             Content-Type: 'application/json'
        url_username: CNbsMFQn9LDynLiPd0oL
        url_password: Welcome@#$
+       status_code: 201
     register: login
     environment:
        http_proxy: 'http://apac-nat-zscaler.proxy.lvmh:9480'
