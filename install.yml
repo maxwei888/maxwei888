@@ -3,12 +3,12 @@
   gather_facts: no
 
   tasks:
-  - name: gather facts
-    setup:
-      gather_subset:
-        - '!all'
-        - '!network'
-        - '!hardware'
+  #- name: gather facts
+  #  setup:
+   #   gather_subset:
+    #    - '!all'
+     #   - '!network'
+      #  - '!hardware'
 
   - name: print a message
     debug: msg="this is my first task to print some message!!!"
