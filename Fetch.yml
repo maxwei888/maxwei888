@@ -3,9 +3,11 @@
   tasks:
   - name: Copy a single file where the source is on the remote host
     win_copy:
-       src: \\ivanti\test\test.txt
-       dest: D:\
+       src: '\\ivanti\test\test.txt'
+       dest: 'D:\'
+       force: yes
        remote_src: yes
+       
     
 
 
