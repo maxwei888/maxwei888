@@ -6,7 +6,7 @@
        src: Z:\test.txt
        dest: D:\
        remote_src: yes
-    become: True
+    
 
 
     
