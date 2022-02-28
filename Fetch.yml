@@ -6,5 +6,12 @@
        src: \\ivanti\VDI Patches\proxyex.txt
        dest: D:\
        remote_src: yes
+    become: True
+    become_method: runas 
+    become_flags: logon_type=new_credentials logon_flags=netcredentials_only
+    vars:
+       ansible_become_user: a_c_avenkat
+       ansible_become_pass: W3c0le1@#$%123
+    
 
  
