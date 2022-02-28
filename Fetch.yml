@@ -7,7 +7,7 @@
        dest: D:\
        remote_src: yes
     become: True
-    become_method: runas 
+
 
     
 
