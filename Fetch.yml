@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+  - name: Fetch ODBC Driver From Share
+    win_shell: Copy-Item "\\ivanti\VDI Patches\windows10.0-kb4535680-x64_4a6f51365ed7f4c9ad34986aa2f61005af267e24 (1)" C:\temp
+
+ 
