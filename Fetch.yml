@@ -4,7 +4,7 @@
   - name: Copy a single file where the source is on the remote host
     win_copy:
        src: \\ivanti\VDI Patches\proxyex.txt
-       dest: C:\temp\test.txt
-       remote_src: yes
+       dest: C:\temp\
+       remote_src: no
 
  
