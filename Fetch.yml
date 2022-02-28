@@ -3,7 +3,7 @@
   tasks:
   - name: Copy a single file where the source is on the remote host
     win_copy:
-       src: \\ivanti\VDI Patches\proxyex.txt
+       src: \\ivanti\VDI Patches\proxyex
        dest: C:\temp\
        remote_src: no
 
