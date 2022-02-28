@@ -3,7 +3,7 @@
   tasks:
   - name: Copy a single file where the source is on the remote host
     win_copy:
-       src: \\10.176.133.3\test\test.txt
+       src: Z:\test.txt
        dest: D:\
        remote_src: yes
     become: True
