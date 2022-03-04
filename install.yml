@@ -10,7 +10,7 @@
         - 'network'
         - 'hardware'
     register: facts
-  - debug: msg={{facts.stdout}}  
+  - debug: msg={{facts}}  
 
   - name: show IP address
     shell: "hostname -I" 
