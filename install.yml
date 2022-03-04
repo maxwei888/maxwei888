@@ -7,7 +7,7 @@
     setup:
       gather_subset:
         - '!all'
-        - 'network'
+        - '!network'
         - '!hardware'
     register: facts
   - debug: msg={{facts}}  
