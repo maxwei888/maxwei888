@@ -1,14 +1,16 @@
 ---
 - hosts: all
-  #gather_facts: true
+  gather_facts: false
   #serial: 1
   tasks:
   - name: gather facts
     setup:
       gather_subset:
         - '!all'
-        - '!network'
-        - '!hardware'
+        - 'network'
+        - 'hardware'
+    register: facts
+  - debug: msg={{facts.stdout}}  
 
   - name: show IP address
     shell: "hostname -I" 
