@@ -1,14 +1,14 @@
 ---
 - hosts: all
-  gather_facts: true
+  #gather_facts: true
   #serial: 1
   tasks:
-  #- name: gather facts
-  #  setup:
-   #   gather_subset:
-    #    - '!all'
-     #   - '!network'
-      #  - '!hardware'
+  - name: gather facts
+    setup:
+      gather_subset:
+        - '!all'
+        - '!network'
+        - '!hardware'
 
   - name: show IP address
     shell: "hostname -I" 
