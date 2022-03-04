@@ -1,6 +1,7 @@
 ---
 - hosts: all
-  serial: 1
+  gather_facts: false
+  #serial: 1
   tasks:
   #- name: gather facts
   #  setup:
